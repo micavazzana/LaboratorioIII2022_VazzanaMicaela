@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./Estilos.css" />
+    <title>PP Personas Heroes Villanos</title>
+  </head>
+  <body id="cuerpo">
+    <h1>Parcial MICA VAZZANA</h1>
+    <form id="Datos">
+      <a class="montBlack">FORM DATOS</a><br />
+
+      <div>
+        Filtrar por:
+        <select id="select">
+          <option value="todos" selected>Todos</option>
+          <option value="heroe">Heroe</option>
+          <option value="villano">Villano</option>
+        </select>
+      </div>
+      <div id="promedioEdades">
+        Edad Promedio:
+        <input id="txtEdadPromedio" type="text" />
+        <input id="botonCalcular" type="button" value="Calcular"/>
+      </div>
+      <br />
+      <div id="checkboxes">
+        <input type="checkbox" id="checkId" checked />ID
+        <input type="checkbox" id="checkNombre" checked />Nombre
+        <input type="checkbox" id="checkApellido" checked />Apellido
+        <input type="checkbox" id="checkEdad" checked />Edad
+        <input type="checkbox" id="checkAlterEgo" checked />Alter Ego
+        <input type="checkbox" id="checkCiudad" checked />Ciudad
+        <input type="checkbox" id="checkPublicado" checked />Publicado
+        <input type="checkbox" id="checkEnemigo" checked />Enemigo
+        <input type="checkbox" id="checkRobos" checked />Robos
+        <input type="checkbox" id="checkAsesinatos" checked />Asesinatos
+      </div>
+      <table id="table">
+      <thead id="thead">
+        <tr>
+            <th id="thId"><button id="bId">ID</button></th> 
+            <th id="thNombre"><button id="bNombre">Nombre</button></th> 
+            <th id="thApellido"><button id="bApellido">Apellido</button></th> 
+            <th id="thEdad"><button id="bEdad">Edad</button></th>
+            <th id="thAlterEgo"><button id="bAlterEgo">Alter Ego</button></th>
+            <th id="thCiudad"><button id="bCiudad">Ciudad</button></th>
+            <th id="thPublicado"><button id="bPublicado">Publicado</button></th>
+            <th id="thEnemigo"><button id="bEnemigo">Enemigo</button></th>
+            <th id="thRobos"><button id="bRobos">Robos</button></th>
+            <th id="thAsesinatos"><button id="bAsesinatos">Asesinatos</button></th> 
+        </tr>
+     </thead>
+     <tbody id="tbody"></tbody>
+    </table>
+      <br />
+      <input type="button" value="Agregar" id="btnAgregar" />
+    </form>
+    <br />
+    <form id="formAbm" class="formAbm">
+      <a class="montBlack">FORM ABM</a><br />
+      <div id="persona">
+        <label>ID: <input type="text" readonly="readonly" id="campoId"></label><br>
+        <label>Nombre: <input type="text" id="campoNombre"></label><br>
+        <label>Apellido: <input type="text" id="campoApellido"></label><br>
+        <label>Edad: <input type="text" id="campoEdad"></label><br>
+        <lablel>Tipo: 
+        <select id="selectAbm">
+          <option value="heroeAbm" selected>Heroe</option>
+          <option value="villanoAbm">Villano</option>
+        </select>
+      </lablel>
+      </div>
+      <div id="divHeroe">
+          <label">Alter Ego: <input type="text" id="campoAlterEgo"></label><br>
+          <label">Ciudad:<input type="text" id="campoCiudad"></label><br>
+          <label">Publicado:<input type="text" id="campoPublicado"></label><br>
+      </div>
+      <div id="divVillano">
+        <label">Enemigo: <input type="text" id="campoEnemigo"></label><br>
+        <label">Robos:<input type="text" id="campoRobos"></label><br>
+        <label">Asesinatos:<input type="text" id="campoAsesinatos"></label><br>
+      </div>
+      <div id="botonesAbm">
+        <input type="button" id="btnAlta" value="Alta">
+        <input type="button" id="btnModificar" value="Modificar">
+        <input type="button" id="btnEliminar" value="Eliminar">
+        <input type="button" id="btnCancelar" value="Cancelar">
+    </div>    
+    </form>
+    <script src="./Clases.js"></script>
+  </body>
+</html>

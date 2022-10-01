@@ -1,0 +1,99 @@
+
+h1{
+    font-family: montserrat black;
+    font-size: 20px;
+}
+
+body {
+    font-family: "Lato", "sans serif";
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.montBlack {
+    font-family: montserrat black;
+    font-size: 16px;
+}
+
+select{
+    font-family: "Lato", "sans serif";
+    text-align: center;
+    color: black;
+    background-color: #fff6e2;
+    font-size: 15px;
+    border-radius: 4px;
+    border-style: hidden;
+}
+
+select:hover {
+    background-color: #ffbc55;
+}
+
+input[type=button] {
+    font-family: "Lato", "sans serif";
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: #c8875e;
+    border-radius: 6px;
+    border-style: hidden;
+    line-height: 20px;
+}
+input[type=button]:hover {
+    background-color:#5e4c6c;
+}
+
+input[type=text] {
+    font-family: "Lato", "sans serif";
+    font-weight: bold;
+    text-align: center;
+    width: 10%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+input[type=checkbox]
+{
+    accent-color: #5e4c6c;
+}
+
+#checkboxes {
+    font-weight: bold;
+}
+
+table{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    margin: auto;
+    align-self: center;
+}
+
+td {
+    background-color: #fff6e2;
+    border-radius: 5px;
+}
+
+button {
+    font-family: "Lato", "sans serif";
+    font-size: 15px;
+    color:white;
+    background-color: #cb6356;
+    border-radius: 3px;
+    border-style: hidden;
+}
+
+button:hover {
+    background-color:#5e4c6c;
+}
+
+.formAbm {
+    margin: auto;
+    display: "flex";
+    justify-content: center;
+    border-radius: 25px;
+}
